@@ -1,0 +1,31 @@
+/*Stylesheet*/
+
+body{
+    background-color: #FDE9FD;
+    font-family: "Century Gothic", sans-serif;
+}
+title{
+    background-color: #993499;
+}
+h1{
+    background-color: #e2c5e2;
+    font-size: 40px;
+}
+ h2{
+    font-size: 20px;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+
+.year{
+    float: right;
+    font-style: italic;
+}
+.job-title{
+    font-weight: bold;
+}
+.organisation{
+    color: #179ca0;
+    font-weight: bold;
+    font-style: italic;
+ }
