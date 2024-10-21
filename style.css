@@ -1,14 +1,15 @@
 /*Stylesheet*/
 
-body{
-    background-color: #FDE9FD;
-    font-family: "Century Gothic", sans-serif;
-}
 title{
     background-color: #993499;
 }
 
- h2{
+body{
+    background-color: #FDE9FD;
+    font-family: "Century Gothic", sans-serif;
+}
+
+h2{
     font-size: 20px;
     letter-spacing: 5px;
     word-spacing: 3px;
