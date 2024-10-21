@@ -7,10 +7,7 @@ body{
 title{
     background-color: #993499;
 }
-h1{
-    background-color: #e2c5e2;
-    font-size: 40px;
-}
+
  h2{
     font-size: 20px;
     letter-spacing: 5px;
@@ -29,3 +26,41 @@ h1{
     font-weight: bold;
     font-style: italic;
  }
+
+ .icons{
+    font-size: 25px;
+    display: flex;
+ }
+ 
+ .icons a{
+    margin: auto;
+    margin-left: 15px;
+    text-decoration: none;
+ }
+
+ .fa-solid.fa-envelope{
+    color: #be73e3;
+ }
+
+ .fa-brands.fa-github{
+    color: #4e17a0;
+ }
+
+ .fa-brands.fa-linkedin{
+    color: #0948b3;
+ }
+
+ .fa-solid.fa-envelope:hover,
+ .fa-brands.fa-github:hover,
+ .fa-brands.fa-linkedin:hover{
+    color: #8f88a8;
+ }
+
+ .cv_header{
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e2c5e2;
+ }
+
