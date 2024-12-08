@@ -1,7 +1,6 @@
 /*Stylesheet*/
 
 body{
-
    background-color: rgb(231, 218, 218);
    margin: 0rem;
    line-height: 1.75;
@@ -11,7 +10,7 @@ body{
    display: flex;
    flex-direction: column;
    font-family: "Georgia", "Century Gothic", sans-serif;
-   padding: 2rem;
+   padding: 3rem;
 }
 
 .main-navigator{
@@ -44,7 +43,6 @@ nav a:hover{
 
 
 .cv_header{
-   padding-top: 1rem;
    display: flex;
    justify-content: space-between;
    align-items: center;
