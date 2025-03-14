@@ -9,7 +9,6 @@ body{
 .content{
    display: flex;
    flex-direction: column;
-   font-family: "Georgia", "Century Gothic", sans-serif;
    padding: 3rem;
 }
 

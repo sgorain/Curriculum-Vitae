@@ -1,0 +1,99 @@
+
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    font-family: "Georgia", "Century Gothic", sans-serif;
+}
+
+.left-pane{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    background-image: url('comm.jpeg');
+    background-size: cover;
+}
+
+#contact-me{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.right-pane{
+    margin-left: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input, textarea, button{
+    margin-top: 0.5rem;
+}
+
+button{
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.main-navigator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    background-color:rgb(196, 196, 188);
+ }
+
+ nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+
+ }
+
+
+.main-navigator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    background-color:rgb(196, 196, 188);
+ }
+ 
+ 
+ nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+ }
+ 
+ nav a{
+    text-decoration: none;
+    color: #666;
+ }
+ 
+ nav a:hover{
+    color: #c3a0a0;
+ }
+ 
