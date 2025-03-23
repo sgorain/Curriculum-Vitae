@@ -29,38 +29,24 @@
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message goes here" required></textarea>
             <button type="submit">Send</button>
         </form>
-
-        <script>
-            // Creates a tool to read URL parameters (like '?status=success')
-            const urlParams = new URLSearchParams(window.location.search);
-            // Gets the 'status' value from the URL (e.g., 'success' or 'error')
-            const status = urlParams.get('status');
-            // If status is 'success', show a popup saying it worked
-            if (status === 'success') {
-            alert('Message sent successfully!');
-            // If status is 'error', show a popup saying it failed
-            } else if (status === 'error') {
-                alert('Error sending message');
-            }
-        </script>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script>
         (function() {
-            emailjs.init('2NweU0Fy6RmJNQxQK')
+            emailjs.init('2NweU0Fy6RmJNQxQK');
         })();
         document.getElementById("contact-form").addEventListener('submit', function(event){
             event.preventDefault(); //prevent page reload
             
-            emailjs.sendform('service_thkk4wm', 'template_7lshest', this)
-            .then(function(){
-                console.log('Sent!');
-                window.location.href = 'contact.html?status=success';
-            }, function(error){
-                console.log('Failed...', error);
-                window.location.href = 'contact.html?status=error';
-            });
+            emailjs.sendForm('service_thkk4wm', 'template_7lshest', this)
+                .then(function(){
+                    console.log('Sent!');
+                    window.location.href = 'contact.html?status=success';
+                }, function(error){
+                    console.log('Failed...', error);
+                    window.location.href = 'contact.html?status=error';
+                });
 
         });
        
