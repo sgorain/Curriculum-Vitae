@@ -122,9 +122,8 @@ nav a:hover{
     color: #0948b3;
  }
 
- .fa-solid.fa-envelope:hover,
- .fa-brands.fa-github:hover,
- .fa-brands.fa-linkedin:hover, 
+ .fa-solid:hover,
+ .fa-brands:hover,
  .organisation:hover a{
     color: #8f88a8;
  }
