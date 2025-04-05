@@ -42,7 +42,7 @@ nav a:hover{
 }
 
 
-.cv_header{
+.pg_header{
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -149,4 +149,10 @@ nav a:hover{
 }
 
 
-
+.quote{
+   display: flex;
+   align-items: center;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+}
