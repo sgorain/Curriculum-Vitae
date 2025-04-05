@@ -4,6 +4,7 @@ body{
    background-color: rgb(231, 218, 218);
    margin: 0rem;
    line-height: 1.75;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .content{
@@ -104,6 +105,7 @@ nav a:hover{
  .year, 
  .organisation{
    font-style: italic;
+   display: inline;
  }
 
 .organisation{
@@ -129,6 +131,22 @@ nav a:hover{
  }
 
 
+.fa-circle-question:hover .tooltip{
+   visibility: visible;
+   background-color: #f9f7f7;
+   color: #0c0808;
+   padding: 5px;
+   border-radius: 5px;
+   font-size: 0.8rem;
+   translate: 0% -100%;
+}
+
+.tooltip{
+   position: absolute;
+   visibility: hidden;
+   width: fit-content;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 
 

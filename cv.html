@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Snehan Gorain - Curriculum vitae</title>
+        <link rel="stylesheet" href="style.css">
+        
+       
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <div id="main-navigator"></div>
+        <script>
+            fetch('./navbar.html')
+                .then(Response=>Response.text())
+                .then(navbar_code =>{
+                    document.getElementById("main-navigator").innerHTML = navbar_code;
+                    let scriptE = document.createElement('script');
+                    scriptE.src = "https://kit.fontawesome.com/608618adc6.js";
+                    scriptE.crossOrigin = "anonymous";
+                    document.body.appendChild(scriptE);
+                })
+                .catch(error => console.log("Error : " + error));
+        </script>
+
+        <div class="content">
+            <!--The header with icons-->
+            <div class="pg_header">
+            <div>Snehan Gorain - CV</div>
+            <ul class="icons">
+                <li>
+                    <a href="https://github.com/sgorain" target="_blank" rel="noopenner noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/snehan-gorain-572b1322b/" target="_blank" rel="noopenner noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/snehangorain" target="_blank" rel="noopenner noreferrer">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="left-section object">
+                <h2>WORK</h2>
+				<div class="job-title">IT Business Analyst</div>
+                <div class="job-info">
+					<div class="organisation"><a href="https://www.logiag.com/en/" target="_blank" rel="noopenner noreferrer">Logiag</a>, Châteauguay, Qc</div>
+					<div class="year">2023-present</div>
+                </div>
+                <ul>
+                    <li>Consulted user groups, agronomists, climate scientists, scientific literature, and software developers to create a farm GHG footprint calculator for clients including General Mills, Saputo, and Agropur</li>
+                    <li>Created models in Excel and python to design software prototypes</li>
+                    <li>Created and documented user stories and use cases</li>
+                    <li>Created and documented process maps using BPMN</li>
+                    <li>Created and documented data flow diagrams</li>
+                </ul>
+                <div class="job-title">Greenhouse Gas Inventory Analyst</div>
+				<div class="job-info">
+					<div class="organisation"><a href="https://www.logiag.com/en/" target="_blank" rel="noopenner noreferrer">Logiag</a>, Châteauguay, Qc</div>
+					<div class="year">2023-present</div>
+				</div>
+                <ul>
+                    <li>Collobarated with clients to gather data</li>
+                    <li>Cleaned, organized, and extracted data from documentation</li>
+                    <li>Replaced missing data by creating hypotheses</li>
+                    <li>Identified limitations and improved precision of the model</li>
+                </ul>
+                <div class="job-title">Agri-environmental Technician</div>
+				<div class="job-info">
+                    <div class="organisation"><a href="https://www.logiag.com/en/" target="_blank" rel="noopenner noreferrer">Logiag</a>, Châteauguay, Qc</div>
+					<div class="year">2023</div>
+                </div>
+                <ul>
+                    <li>Conducted topographical surveys for field levelling</li>
+                    <li>Conducted conventional and GPS soil sampling</li>
+                    <li>Planned soil sampling routes using in-house software and QGIS</li>
+                </ul>
+            	<div class="job-title">Co-manager</div>
+				<div class="job-info">
+					<div class="organisation"><a href="https://macdonaldstudentfarm.wixsite.com/mseg" target="_blank" rel="noopenner noreferrer">MacDonald Student-run Ecological Garden</a>, Sainte Anne de Bellevue, Qc</div>
+                    <div class="year">2020-2021</div>
+                </div>
+                <ul>
+                    <li>Created a system of Excel workbooks to monitor finances and the annual budget</li>
+                    <li>Calculated fertilization requirements for a variety of horticultural crops</li>
+                    <li>Created a cropping plan</li>
+                    <li>Identified and managed crop pests and diseases using organic methods</li>
+                    <li>Engaged the public using Canva and social media</li>
+                    <li>Won funding from McGill University's Sustainability Project</li>
+                    <li>Hired and trained interns</li>
+                </ul>
+            </div>
+            <div class="right-section">
+				<div class="object">
+                	<h5>SKILLS SUMMARY</h5>
+                	<ul>
+                        <li>
+                            BPMN 
+                            <i class="fa-solid fa-circle-question">
+                                <span class="tooltip">Business Process Model and Notation</span>
+                            </i>
+                        </li>
+                        <li>Agile methodology</li>
+                   		<li>SQL</li>
+                    	<li>Python & Pandas</li>
+                        <li>
+                            Scikit Learn
+                            <i class="fa-solid fa-circle-question">
+                                <span class="tooltip">Machine Learning library for Python</span>
+                            </i>
+                        </li>
+                    	<li>HTML/CSS/Javascript</li>
+                	</ul>
+				</div>
+				<div class="object">
+                	<h5>EDUCATION</h5>
+                	<div>Bachelor of Science, Environment & Computer Science</div>
+                	<div><em>2023</em></div>
+                	<div class="organisation">McGill University, Montréal, Qc</div>
+                		<ul>
+                    		<li>Specialization in <strong>Food Production</strong></li>
+                    		<li>Minor in <strong>Computer Science</strong></li>
+                    		<li>GPA: 3.85</li>
+                		</ul>
+				</div>
+
+                <div class="object">
+                	<h5>CERTIFICATIONS</h5>
+                	<ul>
+                    	<li><strong>Python for Data Science, AI & Development</strong> <div class = "organisation">Issued by IBM, 2024</div></li>
+                    	<li><strong>Databases & SQL for Data Science with Python</strong> <div class = "organisation">Issued by IBM, 2024</div></li>
+                    	<li><strong>Data Analysis & Visualisation with Python</strong> <div class = "organisation">Issued by IBM, 2024</div></li>
+                	</ul>
+
+                </div>
+				
+				<div class="object">
+                	<h5>BEYOND THE WORKPLACE</h5>
+                	<ul>
+                    	<li><strong>Varsity Figure Skating, </strong><em>McGill University </em>(2022-2023)</li>
+                 		<li><strong>Director of Communications, </strong><em>Greenpeace McGill </em>(2019)</li>
+                    	<li><strong>Piano teacher, </strong><em>School of Music Montréal </em>(2018)</li>
+                	</ul>
+				</div>
+            </div>
+        </div>
+        </div>
+    
+    </body>
+</html>
