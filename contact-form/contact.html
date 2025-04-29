@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
     <link rel="stylesheet" href="contact.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!--Nav bar-->
@@ -32,9 +33,12 @@
             <input type="email" name="email" id="email" placeholder="Email Address" required>
             <input type="url" name="website" id="website" placeholder="Website">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message goes here" required></textarea>
+
+            <div class="g-recaptcha" data-sitekey="6LdT0ygrAAAAAN8Q8YzRnYLr8-A26FXT0wSR6rcF"></div>
             <button type="submit">Send</button>
         </form>
     </div>
+
 
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script>
@@ -42,7 +46,14 @@
             emailjs.init('2NweU0Fy6RmJNQxQK');
         })();
         document.getElementById("contact-form").addEventListener('submit', function(event){
+
+            const reCAPTCHAResponse = grecaptcha.getResponse();
+            if(!reCAPTCHAResponse){
+                alert("That is sus");
+                return;
+            }
             event.preventDefault(); //prevent page reload
+            
             
             emailjs.sendForm('service_thkk4wm', 'template_7lshest', this)
                 .then(function(){
