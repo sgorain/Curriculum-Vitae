@@ -33,8 +33,11 @@
             <input type="email" name="email" id="email" placeholder="Email Address" required>
             <input type="url" name="website" id="website" placeholder="Website">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message goes here" required></textarea>
-
+            
+            <!--Add reCAPTCHA widget-->
             <div class="g-recaptcha" data-sitekey="6LdT0ygrAAAAAN8Q8YzRnYLr8-A26FXT0wSR6rcF"></div>
+            
+            <!--submit-->
             <button type="submit">Send</button>
         </form>
     </div>
@@ -47,10 +50,11 @@
         })();
         document.getElementById("contact-form").addEventListener('submit', function(event){
 
-            const reCAPTCHAResponse = grecaptcha.getResponse();
+            event.preventDefault(); //prevent submission of the form
+            // Check if reCAPTCHA is completed
+            const reCAPTCHAResponse = grecaptcha.getResponse(); //long string value in the server response
             if(!reCAPTCHAResponse){
-                alert("That is sus");
-                return;
+                throw new Error("reCAPTCHA not completed");
             }
             event.preventDefault(); //prevent page reload
             
@@ -63,6 +67,8 @@
                     console.log('Failed...', error);
                     window.location.href = 'contact.html?status=error';
                 });
+
+            alert("Your message has been sent successfully.");
 
         });
        
