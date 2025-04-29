@@ -56,7 +56,6 @@
             if(!reCAPTCHAResponse){
                 throw new Error("reCAPTCHA not completed");
             }
-            event.preventDefault(); //prevent page reload
             
             
             emailjs.sendForm('service_thkk4wm', 'template_7lshest', this)
